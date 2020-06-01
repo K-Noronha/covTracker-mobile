@@ -1,10 +1,14 @@
 import React from "react";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
-
+import { UserProvider } from "./context";
 import Navigator from "./Navigator";
 
 export default function App() {
-  return <Navigator />;
+  return (
+    <UserProvider>
+      <Navigator />
+    </UserProvider>
+  );
 }
 
 const styles = StyleSheet.create({
