@@ -5,11 +5,15 @@ import { UserContext } from "../context";
 class ProfileScreen extends Component {
   static contextType = UserContext;
   render() {
-    let { name } = this.context;
+    let { name, email, phone, address } = this.context;
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text>PROFILE SCREEN</Text>
-        <Text>{name}</Text>
+        <Text style={{ padding: 50 }}>PROFILE SCREEN</Text>
+
+        <Text>Name: {name}</Text>
+        <Text>Email: {email}</Text>
+        <Text>Phone: {phone}</Text>
+        <Text>Address: {address}</Text>
       </View>
     );
   }
