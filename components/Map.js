@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Image } from "react-native";
-import mapimg from "../images/map.png";
+import mapimg from "../assets/map.png";
 
 const Map = () => {
   return (
